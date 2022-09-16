@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./dist/img/favicon.ico" />
+    <link rel="apple-touch-icon" href="./dist/img/apple-touch-icon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FR Project</title>
+    <link href="dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header
+      class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent"
+    >
+      <div class="container">
+        <div class="relative flex items-center justify-between">
+          <div class="px-4">
+            <a href="#home" class="block py-6 text-lg font-bold text-primary"
+              ><img src="./dist/img/icon/Logo FR.svg" width="24px" alt=""
+            /></a>
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="group absolute right-0 z-10 block bg-transparent p-4 lg:hidden"
+            >
+              <span
+                class="hamburger-line z-[9] origin-top-left transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line z-[9] transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line z-[9] origin-bottom-left transition duration-300 ease-in-out"
+              ></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg  lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="mx-8 flex py-2 text-base text-secondary group-hover:text-primary "
+                    >Home</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#projects"
+                    class="mx-8 flex py-2 text-base text-secondary group-hover:text-primary "
+                    >Projects</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#skills"
+                    class="mx-8 flex py-2 text-base text-secondary group-hover:text-primary "
+                    >Skills</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#resume"
+                    class="mx-8 flex py-2 text-base text-secondary group-hover:text-primary "
+                    >Resume</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="mx-8 flex py-2 text-base text-secondary group-hover:text-primary "
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="bg-light1 py-36 ">
+      <div class="container">
+        <div class="flex flex-wrap lg:flex-row-reverse">
+          <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="w-full self-end px-4 pb-6 lg:mb-0 lg:w-1/2">
+            <img
+              src="dist/img/FathuRahman.svg"
+              alt="Fathu Rahman"
+              class="mx-auto w-[360px] max-w-full"
+            />
+          </div>
+          <div data-aos="fade-up"
+          data-aos-duration="1000" class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-base font-semibold text-secondary md:text-xl">
+              Hi, I'm
+              <span
+                class="mt-1 block text-4xl font-bold text-primary lg:text-5xl"
+                >Fathu Rahman</span
+              >
+            </h1>
+            <h2 class="mb-5 text-lg font-medium text-secondary lg:text-2xl">
+              Full Stack
+              <span class="font-bold ">Web Developer</span>
+            </h2>
+            <p class="mb-10 font-medium leading-relaxed text-black">
+              I am interested in working on programming field and also Data
+              Science or Data Analyst related job. I am passionate and
+              experienced in website development, machine learning, data, and
+              analytics.
+            </p>
+
+            <a
+              href="mailto:fathur208@gmail.com"
+              class="rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:scale-90 hover:opacity-80 hover:shadow-lg"
+              >Contact Me</a
+            >
+            <div class="mt-8 flex items-center">
+              <!-- Youtube -->
+              <a
+                href="https://www.youtube.com/channel/UCo3D3PtHeag9yP4wF5oD2Tg"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-dark text-dark hover:border-primary hover:bg-primary hover:text-light1"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>YouTube</title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+
+              <!-- Instagram -->
+              <a
+                href="https://instagram.com/fathur_mdr"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-dark text-dark hover:border-primary hover:bg-primary hover:text-light1"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Instagram</title>
+                  <path
+                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                  />
+                </svg>
+              </a>
+              <!-- LinkedIn -->
+              <a
+              href="https://www.linkedin.com/in/fathur208/"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-dark text-dark hover:border-primary hover:bg-primary hover:text-light1"
+              >
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>LinkedIn</title>
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+              </a>
+              <!-- Github -->
+              <a
+                href="https://github.com/fathurmdr"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-dark text-dark hover:border-primary hover:bg-primary hover:text-light1"
+              >
+              <svg  role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>              
+              </a>
+              
+              <!-- Showwcase -->
+              <a
+                href="https://www.showwcase.com/fathurmdr"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-dark text-dark hover:border-primary hover:bg-primary hover:text-light1"
+              >
+              <svg 
+                width="20" 
+                viewBox="0 0 100 90" 
+                class="fill-current" 
+                xmlns="http://www.w3.org/2000/svg"><title>Showwcase</title><path fill-rule="evenodd" clip-rule="evenodd" d="M35.64 7.241a67.234 67.234 0 0 1 7.064-.916c.536-.041.909-.13 1.14-.507.39-.634 1.084-.878 2.05-.95 2.6-.194 5.179-.208 7.785-.029 1.257.087 2.095.406 2.577 1.233.19.325.517.445 1.007.48 1.023.072 2.04.182 3.054.317 1.317.176 2.621.399 3.988.623-.236-.795-.603-1.468-1.016-2.129C61.711 2.84 59.18 1.121 55.415.424c-2.829-.523-5.692-.477-8.56-.311-1.795.104-3.508.46-5.107 1.076-3.332 1.28-4.971 3.466-6.109 6.052ZM1.981 9.547a12.25 12.25 0 0 1 3.153 1.76c2.095 1.603 3.537 3.515 4.873 5.472 1.485 2.174 2.654 4.445 3.756 6.746.219-.133.235-.292.282-.446.562-1.82 1.222-3.621 2.067-5.385 1.499-3.125 3.505-6.015 7.157-8.138.367-.213.337-.362.066-.613-1.157-1.072-2.406-2.08-3.863-2.94-1.152-.679-2.476-1.023-3.981-.998-3.304.054-6.31.833-9.16 1.977-1.642.659-3.17 1.43-4.35 2.565ZM45.45 7.29l-.342.05c-.051-.011-.104-.036-.153-.034-4.328.237-8.622.618-12.79 1.552-4.464 1-7.909 2.943-10.303 5.858-1.906 2.322-2.948 4.888-3.898 7.47-.993 2.698-1.683 5.448-2.296 8.204-.99 4.449-1.742 8.922-2.45 13.397a447.73 447.73 0 0 0-1.416 9.807c-.629 4.646-1.188 9.295-1.23 13.97-.039 4.101.087 8.19 1.83 12.149 1.143 2.596 3.11 4.73 6.42 6.152 3.43 1.474 7.184 2.27 11.028 2.869 5.693.887 11.478 1.179 17.284 1.246 6.24.072 12.475-.037 18.666-.692 4.539-.48 8.99-1.21 13.202-2.585 3.829-1.25 6.623-3.198 8.143-6.093 1.51-2.873 2.026-5.87 2.202-8.902.397-6.85-.515-13.656-1.473-20.456-.703-4.991-1.466-9.978-2.389-14.952-.565-3.042-1.164-6.078-1.951-9.093-.915-3.5-2-6.965-3.879-10.273-2.289-4.032-6.139-6.879-11.985-8.1-7.264-1.516-14.7-1.883-22.22-1.544Zm45.755 42.175c.003.397.02.794.16 1.181l.461 3.191c-.066.202-.033.392.1.65.108-.268.344-.42.27-.644l1.4-4.995c.097-.184.189-.368.138-.57.271-.456.333-.95.5-1.425 1.016-2.877 1.708-5.8 2.36-8.728.718-3.222 1.337-6.457 2.134-9.669.98-3.95 1.42-7.92 1.23-11.925-.071-1.482-.168-2.973-.716-4.513-.457.259-.857.453-1.206.688-1.61 1.087-2.752 2.428-3.775 3.816-2.914 3.953-4.805 8.195-6.571 12.47-.09.217-.038.424.013.639.914 3.878 1.578 7.78 2.206 11.686.437 2.716.864 5.432 1.296 8.148ZM.279 13.058c-.292.848-.277 1.715-.279 2.579-.01 3.925.578 7.814 1.284 11.7.613 3.377 1.465 6.721 2.295 10.069a465.6 465.6 0 0 0 2.498 9.73c.834 3.079 1.135 6.197 1.452 9.316.023.228-.03.473.188.7.042-.064.096-.11.102-.16a374.246 374.246 0 0 1 1.956-13.677c.718-4.433 1.403-8.868 2.415-13.272.133-.575.297-1.137-.002-1.74-.584-1.182-1.025-2.4-1.587-3.588-1.487-3.142-3.07-6.259-5.444-9.12-.961-1.16-1.956-2.314-3.495-3.14-.35-.218-.73-.605-1.147-.469-.347.114-.221.589-.288.906-.01.052.033.11.052.166Zm92.7-6.237a29.925 29.925 0 0 0-10.118-1.67 5.212 5.212 0 0 0-2.807.825c-1.426.913-2.417 2.057-3.266 3.277-.174.25.013.351.233.483a15.27 15.27 0 0 1 2.692 2.039c2.817 2.682 4.257 5.803 5.445 9.003.362.976.685 1.959 1.068 3.06 1.164-2.394 2.288-4.667 3.762-6.834 1.792-2.635 3.72-5.205 7.08-7.008l.436-.202.378-.152c.35-.092.138-.185 0-.278-.069-.2-.25-.34-.466-.463-.178-.247-.463-.413-.79-.548-.73-.497-1.58-.86-2.482-1.164-.373-.148-.714-.35-1.165-.368Z" fill="var(--color-gray-400)"></path></svg>
+              <!-- <svg  role="img"
+              width="20"
+              class="fill-current"
+              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>               -->
+              </a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Projects Section Start -->
+    <section id="projects" class="bg-light2 pt-28 pb-16 ">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-8 max-w-xl text-center">
+            <h2
+              class="mb-4 text-3xl font-bold text-secondary  sm:text-4xl lg:text-5xl"
+            >
+              Project Showcase
+            </h2>
+          </div>
+        </div>
+
+        <!-- Image Slider Start -->
+        <div data-aos="fade-up"
+        data-aos-duration="1500" class=" image-slider mx-auto w-full max-w-3xl">
+          <div
+            class="relative mx-auto mb-4 overflow-hidden rounded-xl drop-shadow-lg"
+          >
+            <button
+              class="btn-prev absolute top-0 bottom-0 z-10 m-4 flex items-center justify-center border-0 text-center disabled:hover:cursor-pointer"
+            >
+              <img
+                class="h-10 w-10 p-2"
+                src="/dist/img/icon/arrow-left.svg"
+                alt=""
+              />
+            </button>
+            <button
+              class="btn-next absolute top-0 bottom-0 right-0 z-10 m-4 flex items-center justify-center border-0 text-center disabled:hover:cursor-pointer"
+            >
+              <img
+                class="h-10 w-10 p-2"
+                src="/dist/img/icon/arrow-right.svg"
+                alt=""
+              />
+            </button>
+            <div class="slider flex flex-nowrap duration-500 ease-in-out">
+              <div class="last-slide slide w-full shrink-0 rounded-xl">
+                <img
+                  class="w-full"
+                  src="/dist/img/portfolio/QR Code.svg"
+                  alt=""
+                />
+              </div>
+              <div class="slide w-full shrink-0 rounded-xl">
+                <img
+                  class="w-full"
+                  src="/dist/img/portfolio/Goal Setter.svg"
+                  alt=""
+                />
+              </div>
+              <div class="slide w-full shrink-0 rounded-xl">
+                <a href="https://investasiku.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                  <img
+                  class="w-full"
+                  src="/dist/img/portfolio/Investasiku.svg"
+                  alt=""
+                />
+                </a>
+              </div>
+              <div class="slide w-full shrink-0 rounded-xl">
+                <a href="https://fathurmdr.github.io/" target="_blank" rel="noopener noreferrer"><img
+                  class="w-full"
+                  src="/dist/img/portfolio/My First Porfolio Website.svg"
+                  alt=""
+                /></a>
+              </div>
+              <div class="slide w-full shrink-0 rounded-xl">
+                <img
+                  class="w-full"
+                  src="/dist/img/portfolio/QR Code.svg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="first-slide slide w-full shrink-0 rounded-xl transition duration-500 ease-in-out"
+              >
+                <img
+                  class="w-full"
+                  src="/dist/img/portfolio/Goal Setter.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="captions relative mx-auto h-32 py-2 text-center">
+            <div class="caption absolute w-full duration-500 ease-in-out">
+              <h5 class="text-xl font-semibold text-primary">Goal Setter</h5>
+              <p>
+                This website is the result of my exercise from learning MERN Stack on the Traversy Media Youtube channel
+              </p>
+            </div>
+            <div
+              class="caption absolute w-full opacity-0 duration-500 ease-in-out"
+            >
+              <h5 class="text-xl font-semibold text-primary">Investasiku</h5>
+              <p>
+                Investasiku is a web-based application that aims to allow investors to analyze their investments easily.
+              </p>
+            </div>
+            <div
+              class="caption absolute w-full opacity-0 duration-500 ease-in-out"
+            >
+              <h5 class="text-xl font-semibold text-primary">
+                My Fisrt Portfolio Website
+              </h5>
+              <p>This website builded with html, css, and bootstrap</p>
+            </div>
+            <div
+              class="caption absolute w-full opacity-0 duration-500 ease-in-out"
+            >
+              <h5 class="text-xl font-semibold text-primary">
+                QR Code Generator
+              </h5>
+              <p>
+                This website is the result of my exercise from learning how to make a QR Code Generator on the Traversy Media Youtube channel.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Image Slider end -->
+      </div>
+    </section>
+    <!-- Projects Section End -->
+
+    <!-- Skills Section Start -->
+    <section id="skills" class="pt-28 pb-16 ">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-8 max-w-xl text-center">
+            <h2
+              class="mb-4 text-3xl font-bold text-secondary  sm:text-4xl lg:text-5xl"
+            >
+              Skills
+            </h2>
+          </div>
+        </div>
+
+        <!-- Icon Carousel Start -->
+        <div data-aos="fade-up"
+        data-aos-duration="1000"  class="mx-auto w-full max-w-[640px] overflow-hidden py-16">
+          <div
+            class="carousel flex flex-nowrap delay-1000 duration-[10000ms] ease-in-out"
+          >
+            <div
+              class="carousel-item flex w-24 md:w-32 shrink-0 text-sm md:text-base flex-col items-center p-6"
+            >
+              <img class="w-20" src="/dist/img/skills/HTML5.svg" alt="" />
+              <p class="py-3 text-dark">HTML5</p>
+            </div>
+            <div
+              class="carousel-item flex w-24 md:w-32 shrink-0 text-sm md:text-base flex-col items-center p-6"
+            >
+              <img class="w-20" src="/dist/img/skills/CSS3.svg" alt="" />
+              <p class="py-3 text-dark">CSS3</p>
+            </div>
+            <div
+              class="carousel-item flex w-24 md:w-32 shrink-0 text-sm md:text-base flex-col items-center p-6"
+            >
+              <img class="w-20" src="/dist/img/skills/JS.svg" alt="" />
+              <p class="py-3 text-dark">Javascript</p>
+            </div>
+            <div
+              class="carousel-item flex w-24 md:w-32 shrink-0 text-sm md:text-base flex-col items-center p-6"
+            >
+              <img class="w-20" src="/dist/img/skills/NodeJS.svg" alt="" />
+              <p class="py-3 text-dark">NodeJS</p>
+            </div>
+            <div
+              class="carousel-item flex w-24 md:w-32 shrink-0 text-sm md:text-base flex-col items-center p-6"
+            >
+              <img class="w-20" src="/dist/img/skills/Express.svg" alt="" />
+              <p class="py-3 text-dark">ExpressJS</p>
+            </div>
+            <div
+              class="carousel-item flex w-24 md:w-32 shrink-0 text-sm md:text-base flex-col items-center p-6"
+            >
+              <img class="w-20" src="/dist/img/skills/MongoDB.svg" alt="" />
+              <p class="py-3 text-dark">MongoDB</p>
+            </div>
+            <div
+              class="carousel-item flex w-24 md:w-32 shrink-0 text-sm md:text-base flex-col items-center p-6"
+            >
+              <img class="w-20" src="/dist/img/skills/ReactJS.svg" alt="" />
+              <p class="py-3 text-dark">ReactJS</p>
+            </div>
+            <div
+              class="carousel-item flex w-24 md:w-32 shrink-0 text-sm md:text-base flex-col items-center p-6"
+            >
+              <img class="w-20" src="/dist/img/skills/NextJS.svg" alt="" />
+              <p class="py-3 text-dark">NextJS</p>
+            </div>
+            <div
+              class="carousel-item flex w-24 md:w-32 shrink-0 text-sm md:text-base flex-col items-center p-6"
+            >
+              <img class="w-20" src="/dist/img/skills/PostgreSQL.svg" alt="" />
+              <p class="py-3 text-dark">PostgreSQL</p>
+            </div>
+            <div
+              class="carousel-item flex w-24 md:w-32 shrink-0 text-sm md:text-base flex-col items-center p-6"
+            >
+              <img class="w-20" src="/dist/img/skills/Python.svg" alt="" />
+              <p class="py-3 text-dark">Python</p>
+            </div>
+          </div>
+        </div>
+        <!-- Icon Carousel end -->
+      </div>
+    </section>
+    <!-- Skills Section End -->
+
+    <!-- Resume Section Start -->
+    <section id="resume" class="bg-white pt-28 pb-16 ">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-8 max-w-xl text-center">
+            <h1
+              class="mb-4 text-3xl font-bold text-secondary  sm:text-4xl lg:text-5xl"
+            >
+              Resume
+            </h1>
+          </div>
+        </div>
+        <div class="flex flex-col justify-between lg:flex-row">
+          <div data-aos="fade-up"
+          data-aos-duration="1500" class="flex w-full flex-col p-2 md:p-8 lg:w-1/2 mb-8">
+            <h2 class="mb-6 text-xl font-bold text-secondary">Education</h2>
+            <ul>
+              <li class="pl-6 sm:pl-8 ml-[13px] relative border-l-2 box-border border-primary">
+                <div class="circle absolute top-0 -left-[13px] w-6 h-6 box-border border-2 border-primary bg-white rounded-full"></div>
+                <h3 class="mb-2 text-lg font-bold text-primary">
+                  Online Bootcamp Full Stack Node JS
+                </h3>
+                <p class="mb-4 inline-block bg-secondary px-1 text-light2">
+                  2021
+                </p>
+                <p>
+                  <span class="mb-2 inline-block italic">PT. Code Development Indonesia, Jakarta</span>
+                  <ul class="list-disc ml-4">
+                    <li>
+                      Learning Full Stack NodeJS materials, includings:
+                      <ul>
+                        <li>- javascript basics</li>
+                        <li>- PostgreSQL</li>
+                        <li>- NodeJS basics</li>
+                        <li>- RestFul API using NodeJS</li>
+                        <li>- Tailwind CSS</li>
+                        <li>- Web Client App using ReactJS + Redux</li>
+                      </ul>
+                    </li>
+                    <li>Working on a mini-project Full Stack NodeJS for build Web App Human Resource Development</li>
+                  </ul>
+                </p>
+                <br/><br/>
+              </li>
+              <li class="pl-6 sm:pl-8 ml-[13px] relative border-l-2 box-border border-primary">
+                <div class="circle absolute top-0 -left-[13px] w-6 h-6 box-border border-2 border-primary bg-white rounded-full"></div>
+                <h3 class="mb-2 text-lg font-bold text-primary">
+                  Bachelor of Mathematics
+                </h3>
+                <p class="mb-4 inline-block bg-secondary px-1 text-light2">
+                  2017 - 2021
+                </p>
+                <p>
+                  <span class="mb-2 inline-block italic">UIN Syarif Hidayatullah, Jakarta</span><br/>
+                  Activities and Achievements:
+                  <ul class="list-disc ml-4">
+                    <li>
+                      Best Bachelor Degree in Mathematics with GPA 3.88 from Department of Mathematics, UIN Syarif Hidayatullah Jakarta.
+                    </li>
+                    <li>Developed Anomaly Detection Model in Web Traffic Data by Using Long Short Term Memory.</li>
+                    <li>Semi-final Delegation in Calculus Cup UNJ.</li>
+                    <li>Project Officer of PARSIAL (PARSIAL is the annual event of HIMATIKA UIN Jakarta which in this period held a webinar on data science).</li>
+                    <li>Head of PRISMA Department (PRISMA is a research and development department at HIMATIKA UIN Jakarta).</li>
+                  </ul>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div data-aos="fade-up"
+          data-aos-duration="1500" class="flex w-full flex-col p-2 md:p-8 lg:w-1/2">
+            <h2 class="mb-6 text-xl font-bold text-secondary">Experiences</h2>
+            <ul>
+              <li class="pl-6 sm:pl-8 ml-[13px] relative border-l-2 box-border border-primary">
+                <div class="circle absolute top-0 -left-[13px] w-6 h-6 box-border border-2 border-primary bg-white rounded-full"></div>
+                <h3 class="mb-2 text-lg font-bold text-primary">
+                  Software Developer
+                </h3>
+                <p class="mb-4 inline-block bg-secondary px-1 text-light2">
+                  2022 - Now
+                </p>
+                <p>
+                  <span class="mb-2 inline-block italic">PT Astra Otoparts Tbk, Jakarta</span>
+                  <ul class="list-disc ml-4">
+                    <li>
+                      Learning, testing and looking for issues from the Astra Otoshop Bisnis B2B application.
+                    </li>
+                    <li>Participated in the Astra Otoshop Bisnis B2B application training event for Astra Otorparts branches as a trainer.</li>
+                  </ul>
+                </p>
+                <br/><br/>
+              </li>
+              <li class="pl-6 sm:pl-8 ml-[13px] relative border-l-2 box-border border-primary">
+                <div class="circle absolute top-0 -left-[13px] w-6 h-6 box-border border-2 border-primary bg-white rounded-full"></div>
+                <h3 class="mb-2 text-lg font-bold text-primary">
+                  Jr. Data Scientist
+                </h3>
+                <p class="mb-4 inline-block bg-secondary px-1 text-light2">
+                  2021
+                </p>
+                <p>
+                  <span class="mb-2 inline-block italic">Tau-data Indonesia, Depok</span>
+                  <ul class="list-disc ml-4">
+                    <li>
+                      Performing data exploration analysis (preprocessing and visualization) for corporate clients.
+                    </li>
+                    <li>
+                      Doing modeling and programming on projects that the company is working on.</li>
+                      <li>
+                        Presenting (story telling) the results of data analysis to corporate clients.</li>
+                        <li>
+                          Make a report on related activities.</li>
+                  </ul>
+                </p>
+                <br/><br/>
+              </li>
+              <li class="pl-6 sm:pl-8 ml-[13px] relative border-l-2 box-border border-primary">
+                <div class="circle absolute top-0 -left-[13px] w-6 h-6 box-border border-2 border-primary bg-white rounded-full"></div>
+                <h3 class="mb-2 text-lg font-bold text-primary">
+                  Data Entry
+                </h3>
+                <p class="mb-4 inline-block bg-secondary px-1 text-light2">
+                  2020
+                </p>
+                <p>
+                  <span class="mb-2 inline-block italic">Badan Pusat Statistik, Tanggerang Selatan</span>
+                  <ul class="list-disc ml-4">
+                    <li>
+                      Contributed in population census 2020 by inputting population data in south tangerang area
+                    </li>
+                  </ul>
+                </p>
+                <br/><br/>
+              </li>
+              <li class="pl-6 sm:pl-8 ml-[13px] relative border-l-2 box-border border-primary">
+                <div class="circle absolute top-0 -left-[13px] w-6 h-6 box-border border-2 border-primary bg-white rounded-full"></div>
+                <h3 class="mb-2 text-lg font-bold text-primary">
+                  Mathematics Tutor
+                </h3>
+                <p class="mb-4 inline-block bg-secondary px-1 text-light2">
+                  2018 - 2021
+                </p>
+                <p>
+                  <span class="mb-2 inline-block italic">BKB Nurul Fikri, Tanggerang Selatan</span>
+                  <ul class="list-disc ml-4">
+                    <li>
+                      Preparing learning materials.
+                    </li>
+                    <li>Teach math lessons.</li>
+                      <li>
+                        Facilitate students to consult related to mathematics lessons.
+                      </li>
+                    </ul>
+
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Resume Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="bg-light1 pt-32 pb-32 ">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h2
+              class="mb-4 text-3xl font-bold text-primary sm:text-4xl lg:text-5xl"
+            >
+              Contact Me
+            </h2>
+          </div>
+        </div>
+        <form>
+          <div class="w-full lg:mx-auto lg:w-3/5">
+            <div class="mb-8 w-full px-4">
+              <label for="name" class="text-base font-bold text-primary"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                class="w-full rounded-md bg-white px-3 py-2 text-dark ring-1 ring-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+              />
+            </div>
+            <div class="mb-8 w-full px-4">
+              <label for="email" class="text-base font-bold text-primary"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                class="w-full rounded-md bg-white px-3 py-2 text-dark ring-1 ring-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+              />
+            </div>
+            <div class="mb-8 w-full px-4">
+              <label for="message" class="text-base font-bold text-primary"
+                >Message</label
+              >
+              <textarea
+                type="email"
+                id="email"
+                class="h-36 w-full rounded-md bg-white px-3 py-2 text-dark ring-1 ring-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+              ></textarea>
+            </div>
+            <div class="w-full px-4">
+              <button
+                disabled
+                class="w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg"
+              >
+                Send
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Start -->
+    <footer class="bg-secondary pt-24 pb-12">
+      <div class="container">
+        <div class="flex flex-col justify-around md:flex-row">
+          <div class="mb-12 w-full px-4 font-medium text-white md:w-fit">
+            <h2 class="mb-5 text-4xl font-bold text-white">Fathu Rahman</h2>
+            <h3 class="mb-2 text-2xl font-bold">Contact Me</h3>
+            <p>fathur208@gmail.com</p>
+          </div>
+          <div class="mb-12 w-full px-4 md:w-fit">
+            <h3 class="mb-5 text-xl font-semibold text-white">Link</h3>
+            <ul class="flex flex-wrap text-white">
+              <li>
+                <a
+                  href="#home"
+                  class="mb-3 mr-3 inline-block text-base hover:text-primary md:mr-8"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  class="mb-3 mr-3 inline-block text-base hover:text-primary md:mr-8"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#skills"
+                  class="mb-3 mr-3 inline-block text-base hover:text-primary md:mr-8"
+                  >Skills</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#resume"
+                  class="mb-3 mr-3 inline-block text-base hover:text-primary md:mr-8"
+                  >Resume</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="mb-3 mr-3 inline-block text-base hover:text-primary md:mr-8"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="w-full border-t border-slate-700 pt-10">
+          <div class="mb-5 flex items-center justify-center">
+            <!-- Youtube -->
+            <a
+            href="https://www.youtube.com/channel/UCo3D3PtHeag9yP4wF5oD2Tg"
+            target="_blank"
+            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-dark text-dark hover:border-primary hover:bg-primary hover:text-light1"
+          >
+            <svg
+              role="img"
+              width="20"
+              class="fill-current"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>YouTube</title>
+              <path
+                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+              />
+            </svg>
+          </a>
+
+          <!-- Instagram -->
+          <a
+            href="https://instagram.com/fathur_mdr"
+            target="_blank"
+            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-dark text-dark hover:border-primary hover:bg-primary hover:text-light1"
+          >
+            <svg
+              role="img"
+              width="20"
+              class="fill-current"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Instagram</title>
+              <path
+                d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+              />
+            </svg>
+          </a>
+          <!-- LinkedIn -->
+          <a
+          href="https://www.linkedin.com/in/fathur208/"
+          target="_blank"
+          class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-dark text-dark hover:border-primary hover:bg-primary hover:text-light1"
+          >
+          <svg
+            role="img"
+            width="20"
+            class="fill-current"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>LinkedIn</title>
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+            />
+          </svg>
+          </a>
+          <!-- Github -->
+          <a
+            href="https://github.com/fathurmdr"
+            target="_blank"
+            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-dark text-dark hover:border-primary hover:bg-primary hover:text-light1"
+          >
+          <svg  role="img"
+            width="20"
+            class="fill-current"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>              
+          </a>
+          
+          <!-- Showwcase -->
+          <a
+            href="https://www.showwcase.com/fathurmdr"
+            target="_blank"
+            class=" flex h-9 w-9 items-center justify-center rounded-full border border-dark text-dark hover:border-primary hover:bg-primary hover:text-light1"
+          >
+          <svg 
+            width="20" 
+            viewBox="0 0 100 90" 
+            class="fill-current" 
+            xmlns="http://www.w3.org/2000/svg"><title>Showwcase</title><path fill-rule="evenodd" clip-rule="evenodd" d="M35.64 7.241a67.234 67.234 0 0 1 7.064-.916c.536-.041.909-.13 1.14-.507.39-.634 1.084-.878 2.05-.95 2.6-.194 5.179-.208 7.785-.029 1.257.087 2.095.406 2.577 1.233.19.325.517.445 1.007.48 1.023.072 2.04.182 3.054.317 1.317.176 2.621.399 3.988.623-.236-.795-.603-1.468-1.016-2.129C61.711 2.84 59.18 1.121 55.415.424c-2.829-.523-5.692-.477-8.56-.311-1.795.104-3.508.46-5.107 1.076-3.332 1.28-4.971 3.466-6.109 6.052ZM1.981 9.547a12.25 12.25 0 0 1 3.153 1.76c2.095 1.603 3.537 3.515 4.873 5.472 1.485 2.174 2.654 4.445 3.756 6.746.219-.133.235-.292.282-.446.562-1.82 1.222-3.621 2.067-5.385 1.499-3.125 3.505-6.015 7.157-8.138.367-.213.337-.362.066-.613-1.157-1.072-2.406-2.08-3.863-2.94-1.152-.679-2.476-1.023-3.981-.998-3.304.054-6.31.833-9.16 1.977-1.642.659-3.17 1.43-4.35 2.565ZM45.45 7.29l-.342.05c-.051-.011-.104-.036-.153-.034-4.328.237-8.622.618-12.79 1.552-4.464 1-7.909 2.943-10.303 5.858-1.906 2.322-2.948 4.888-3.898 7.47-.993 2.698-1.683 5.448-2.296 8.204-.99 4.449-1.742 8.922-2.45 13.397a447.73 447.73 0 0 0-1.416 9.807c-.629 4.646-1.188 9.295-1.23 13.97-.039 4.101.087 8.19 1.83 12.149 1.143 2.596 3.11 4.73 6.42 6.152 3.43 1.474 7.184 2.27 11.028 2.869 5.693.887 11.478 1.179 17.284 1.246 6.24.072 12.475-.037 18.666-.692 4.539-.48 8.99-1.21 13.202-2.585 3.829-1.25 6.623-3.198 8.143-6.093 1.51-2.873 2.026-5.87 2.202-8.902.397-6.85-.515-13.656-1.473-20.456-.703-4.991-1.466-9.978-2.389-14.952-.565-3.042-1.164-6.078-1.951-9.093-.915-3.5-2-6.965-3.879-10.273-2.289-4.032-6.139-6.879-11.985-8.1-7.264-1.516-14.7-1.883-22.22-1.544Zm45.755 42.175c.003.397.02.794.16 1.181l.461 3.191c-.066.202-.033.392.1.65.108-.268.344-.42.27-.644l1.4-4.995c.097-.184.189-.368.138-.57.271-.456.333-.95.5-1.425 1.016-2.877 1.708-5.8 2.36-8.728.718-3.222 1.337-6.457 2.134-9.669.98-3.95 1.42-7.92 1.23-11.925-.071-1.482-.168-2.973-.716-4.513-.457.259-.857.453-1.206.688-1.61 1.087-2.752 2.428-3.775 3.816-2.914 3.953-4.805 8.195-6.571 12.47-.09.217-.038.424.013.639.914 3.878 1.578 7.78 2.206 11.686.437 2.716.864 5.432 1.296 8.148ZM.279 13.058c-.292.848-.277 1.715-.279 2.579-.01 3.925.578 7.814 1.284 11.7.613 3.377 1.465 6.721 2.295 10.069a465.6 465.6 0 0 0 2.498 9.73c.834 3.079 1.135 6.197 1.452 9.316.023.228-.03.473.188.7.042-.064.096-.11.102-.16a374.246 374.246 0 0 1 1.956-13.677c.718-4.433 1.403-8.868 2.415-13.272.133-.575.297-1.137-.002-1.74-.584-1.182-1.025-2.4-1.587-3.588-1.487-3.142-3.07-6.259-5.444-9.12-.961-1.16-1.956-2.314-3.495-3.14-.35-.218-.73-.605-1.147-.469-.347.114-.221.589-.288.906-.01.052.033.11.052.166Zm92.7-6.237a29.925 29.925 0 0 0-10.118-1.67 5.212 5.212 0 0 0-2.807.825c-1.426.913-2.417 2.057-3.266 3.277-.174.25.013.351.233.483a15.27 15.27 0 0 1 2.692 2.039c2.817 2.682 4.257 5.803 5.445 9.003.362.976.685 1.959 1.068 3.06 1.164-2.394 2.288-4.667 3.762-6.834 1.792-2.635 3.72-5.205 7.08-7.008l.436-.202.378-.152c.35-.092.138-.185 0-.278-.069-.2-.25-.34-.466-.463-.178-.247-.463-.413-.79-.548-.73-.497-1.58-.86-2.482-1.164-.373-.148-.714-.35-1.165-.368Z" fill="var(--color-gray-400)"></path></svg>
+          <!-- <svg  role="img"
+          width="20"
+          class="fill-current"
+          viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>               -->
+          </a>
+          </div>
+          <p class="text-center text-xs font-medium text-semidark">
+            &copy; 2022. All rights reserved by
+            <a
+              href="https://instagram.com/sandhikagalih"
+              target="_blank"
+              class="font-bold text-primary"
+              >Fathu Rahman</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Back to top Start -->
+    <a
+      href="#home"
+      class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse"
+      id="to-top"
+    >
+      <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
+    </a>
+    <!-- Back to top End -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>
